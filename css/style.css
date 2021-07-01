@@ -162,5 +162,23 @@ nav{
     place-items: center;
 }
 
+.works{
+    padding: 30px 100px;
+}
+
+.grid-items img{
+    width: 650px;
+    border-radius: 16px;
+    border: 5px solid #4458dc;
+}
+.grid-items{
+    
+}
+
+.works-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
 
 
