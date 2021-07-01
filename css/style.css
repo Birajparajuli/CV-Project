@@ -181,4 +181,25 @@ nav{
     grid-gap: 40px;
 }
 
+footer{
+    background-color: #4458dc;
+    padding: 30px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-logo h2{
+    color: #ffff;
+    font-size: 50px;
+}
+
+.social-media img{
+    height: 30px;
+    padding: 10px;
+
+}
+
 
