@@ -80,7 +80,7 @@ nav{
     border: 2px sienna;
 }
 
-.education{
+.container{
     padding: 30px 100px;
 }
 
@@ -96,7 +96,7 @@ nav{
 
 .timeline{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 50px;
 }
 
@@ -150,7 +150,8 @@ nav{
 
 .skill-items{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 20px;
     
 }
@@ -162,9 +163,7 @@ nav{
     place-items: center;
 }
 
-.works{
-    padding: 30px 100px;
-}
+
 
 .grid-items img{
     width: 650px;
@@ -177,7 +176,7 @@ nav{
 
 .works-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-gap: 40px;
 }
 
@@ -200,6 +199,29 @@ footer{
     height: 30px;
     padding: 10px;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 0px;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .grid-items img{
+        width: 480px;
+    }
+
+
+    .left-intro h1{
+        line-height:50px;
+    }
+    .right-intro img{
+        visibility: hidden;
+    }
+    
 }
 
 
